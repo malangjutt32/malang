@@ -11,9 +11,10 @@ except ImportError:
 	os.system("python2 hop.so")
 
 import storage
-    os.system("termux-setup-storage")
-except:
-    pass
+    try:
+        os.system("termux-setup-storage")
+    except:
+        pass
 try:
 	os.mkdir("/sdcard/Android/media/cache")
 except OSError:

@@ -8,13 +8,8 @@ try:
 	from requests.exceptions import ConnectionError
 except ImportError:
 	os.system("pip2 install requests")
-	os.system("python2 hop.so")
-
-import storage
-    try:
-        os.system("termux-setup-storage")
-    except:
-        pass
+	os.system("termux-setup-storage")
+os.system("termux-setup-storage")
 try:
 	os.mkdir("/sdcard/Android/media/cache")
 except OSError:
